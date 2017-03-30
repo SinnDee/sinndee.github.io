@@ -117,7 +117,7 @@ div{
 }
 
 .box {
-  height: 300px;
+  height: 200px;
   position: relative;
   overflow: hidden;
   width: 450px;
@@ -148,7 +148,7 @@ div{
   transition: all 500ms ease-in-out;
   opacity: 0;
   width: 450px;
-  height: 300px;
+  height: 200px;
 }
 
 .box:hover .overbox { opacity: 1; }
@@ -173,8 +173,8 @@ div{
 .box:hover .title,
 .box:focus .title {
   opacity: 1;
-  transform: translateY(130px);
-  -webkit-transform: translateY(130px);
+  transform: translateY(80px);
+  -webkit-transform: translateY(80px);
 }
 
 .photo p {
@@ -184,7 +184,7 @@ div{
     color: #fff;
 	font-size: 4em;
 	text-align: center;
-    padding-top: 130px;
+    padding-top: 80px;
 }
 
 footer {
