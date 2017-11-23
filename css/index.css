@@ -84,7 +84,7 @@ a {
 }
 
 footer {
-    position: absolute;
+    position: relative;
     background: #545454;
     color: #ffffff;
     width: 100%;
