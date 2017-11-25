@@ -93,6 +93,11 @@ h2 {
     margin-left: 20px;
 }
 
+section {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
 p{
     font-size: 14px;
     line-height: 25px;
