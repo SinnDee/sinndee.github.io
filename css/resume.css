@@ -20,12 +20,17 @@
 	clear: both;
 }
 
-ul li {
+ul {
+	list-style-type: none;
+}
+
+li {
 	list-style-type: none;
 }
 
 a {
     text-decoration: none;
+    color: #545454;
 }
 
 img {
@@ -64,9 +69,9 @@ nav a {
     padding-left: 20px;
     padding-right: 20px;
     line-height: 30px;
-    font-size: 15px;
+    font-size: 12px;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 8px;
 }
 
 
@@ -77,32 +82,87 @@ nav ul li {
     padding-right: 30px;
 }
 
-a {
-    color: #545454;
-    text-decoration:none;
+.line {
+    display: inline-block;
+    position: relative;
+}
+.line:after {
+    content: '';
+    display: block;
+    margin: auto;
+    width: 0;
+    height: 1px;
+    background-color: transparent;
+    transition: width 0.6s ease, background-color 0.6s ease;
+}
+
+.line:hover:after {
+    width:  50%;
+    background: #545454;
 }
 
 h2 {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 25px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    letter-spacing: 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    letter-spacing: 10px;
     text-transform: uppercase;
-    font-weight: 300;
-    margin-left: 20px;
 }
 
 section {
-    padding-left: 2%;
-    padding-right: 2%;
+    margin: auto;
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 80%;
+    height: auto;
+    box-shadow: 3px 3px 30px 3px #eee;
+}
+
+.left {
+    width: 50%;
+    float: left;
+}
+
+.right {
+    width: 50%;
+    float: right;
+}
+
+.port-left {
+    width: 40%;
+    float: left;
+    margin-left: 9%;
+    box-shadow: 3px 3px 20px 1px #eee;
+}
+
+.port-right {
+    width: 40%;
+    float: right;
+    margin-right: 9%;
+    box-shadow: 3px 3px 20px 1px #eee;
 }
 
 p{
     font-size: 14px;
     line-height: 25px;
+    font-family: 'Cormorant Garamond', serif;
 }
 
+img {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.italics {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700i;
+}
+
+/*little line separating recognition*/
 hr{
     width:5%; 
     margin-left: 47.5%;
@@ -110,13 +170,14 @@ hr{
 
 footer {
     position: relative;
-    background: #545454;
-    color: #ffffff;
-    width: 100%;
+    display: inline-block;
+    color: #545454;
     font-family: 'Source Sans Pro', sans-serif;
-    margin-top: 50px;
+    margin-top: 200px;
+    margin-bottom: 20px;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
+    letter-spacing: 7px;
     bottom: 0;
-    letter-spacing: 20px;
+    width: 100%;
 }
