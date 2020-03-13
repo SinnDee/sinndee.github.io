@@ -7,11 +7,11 @@
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-    -webkit-transition: all 0.8s ease-in-out;
+    /* -webkit-transition: all 0.8s ease-in-out;
     -moz-transition: all 0.6s ease-in-out;
     -ms-transition: all 0.6s ease-in-out;
     -o-transition: all 0.6s ease-in-out;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;*/
 }
 
 .clearfix:after {
@@ -55,25 +55,27 @@ header {
 }
 
 .logo {
-  filter: drop-shadow(0 0 7px #ccc);
+  filter: drop-shadow(0 0 5px #aaa);
 }
 
 nav {
     text-align: center;
-    line-height: 60px;
+    line-height: 30px;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
 nav a {
 	text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
-    letter-spacing: 14px;
+    letter-spacing: 10px;
 }
 
 nav ul li {
 	display: inline-block;
     text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .line {
