@@ -135,6 +135,7 @@ section {
     width: 60%;
     height: auto;
     box-shadow: 3px 3px 30px 3px #eee;
+	overflow: auto;
 }
 
 .right {
