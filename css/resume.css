@@ -129,7 +129,7 @@ section {
 .no {
     font-size: 14px;
     line-height: 25px;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .invisible {
@@ -151,7 +151,7 @@ section {
 p{
     font-size: 14px;
     line-height: 25px;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 img {
@@ -167,7 +167,7 @@ video {
 }
 
 .italics {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700i;
 }
 
