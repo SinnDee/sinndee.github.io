@@ -4,7 +4,9 @@
 			<meta charset="utf-8">
 			<title>C V</title>
             <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-            <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Cormorant+Garamond:400,700i" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap" rel="stylesheet">
             <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
             <link href="css/portfolio.css" rel="stylesheet">
 		</head>
@@ -24,19 +26,21 @@
                 <br><br><br><br>
 			</header>
               <section>
-                  <h2>contact</h2>
+                  <h1>Contact</h1>
                   <p>
-			  <img src="img/cindy-salt-flats.JPG" width="80%" height="80%" alt="self portrait at salt flats"><br>
+			  <img src="img/self-portrait1.JPG" width="45%" height="45%" alt="self portrait at salt flats">
+                      <img src="img/self_portrait2.JPG" width="45%" height="45%" alt="self portrait at salt flats"><br>
 			  
                       <b>Cindy Vo</b><br>
                       cindy.vo@colorado.edu<br><br>
-                      <li><a href="https://www.linkedin.com/in/sinndeesaurus/" class="button" target="_blank">LinkedIn</a></li><br>
+                      <li><a href="https://www.linkedin.com/in/sinndeesaurus/" class="button" target="_blank">LinkedIn</a></li>
 			<li><a href="https://www.instagram.com/cv.xxoo/" class="button" target="_blank">Instagram</a></li>  
                   
                       </p>
               </section>
-              <section>
-                  <h2>experience</h2><br><br>
+              
+                  <button type="button" class="collapsible">Experience</button>
+                  <div class="content">
 		      <p>
                       <b>Jr. Digital Art Director<br>
                       Smartwool &mdash; September 2021 to Present</b><br>
@@ -115,18 +119,23 @@
                       &bull; Photographer and photo editor.<br>
                       &bull; Copy editor.<br>
                       &bull; Research, test, and analyze user interfaces.
-                  </p>
-              </section>
-              <section>
-                  <h2>education</h2><br><br>
+                      </p></div>
+              
+              
+              
+              
+                  <button type="button" class="collapsible">Education</button>
+                  <div class="content">
                   <p>
                       <b>University of Colorado, Boulder</b><br>
                       Bachelor of the Arts<br>
                       Minor in TAMS (Technology, Art, and Media) and Art History<br>
-                  </p>
-              </section>
-              <section>
-                  <h2>recognition</h2><br><br>
+                      </p></div>
+              
+              
+              
+                  <button type="button" class="collapsible">Recognition</button>
+                  <div class="content">
                   <p>
                       Denver Chalk Art Festival<br>
                       2017<br><br>
@@ -170,10 +179,12 @@
                   <p>
                       Jefferson County High School Art Exhibition<br>
                       2011<br>
-                  </p>
-              </section>
-              <section>
-                  <h2>skills</h2>
+                      </p></div>
+              
+              
+              
+                  <button type="button" class="collapsible">Skills</button>
+                  <div class="content">
                   <p>
                       Drawing<br>
 			Illustrating<br>
@@ -202,8 +213,24 @@
 			  Event Management<br>
                       Dog petting<br>
                   
-                  </p>
-              </section>
+                      </p></div>
+              <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+              
             <footer>
                 Designed and coded by yours truly. CV 2022.
             </footer>

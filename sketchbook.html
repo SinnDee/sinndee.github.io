@@ -4,7 +4,10 @@
 			<meta charset="utf-8">
 			<title>C V</title>
             <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-            <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Cormorant+Garamond:400,700i" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap" rel="stylesheet">
+            <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
             <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
             <link href="css/portfolio.css" rel="stylesheet">
 		</head>
@@ -22,49 +25,67 @@
 			</nav>
 			<!-- main heading -->
             <header>
-                <br><br><br><br>
 			</header>
 		<section>
-                <img src="img/portfolio/sketchbook.gif" width="50%" height="50%" alt="sketchbook">
-            <div class="right">
-                  <h2>Sketchbook</h2>
+            
+                  <h1><img src="img/portfolio/sketchbook.gif" alt="moon with cactus" width="10%" height="10%"><br><br>Sketchbook</h1>
                   <p>
                       Just a mind dump of all the different things I do outside of work and freelancing. These keep the soul happy.
-                </p></div>
+                </p>
                   </section>
 			  
-              <section>
-         <h2>Illustrating</h2>
+              
+               <button type="button" class="collapsible">Illustrating</button>
+                  <div class="content">
+        
                   <p>
                       I had mostly done traditional drawing all my life, but recently turned to digital drawing to give it a bit of "oomph".<br><br><br>
-                      <img src="img/PE/portrait3.gif" alt="portrait with leaves" width="75%" height="75%">
-                      <img src="img/PE/portrait4.gif" alt="portrait with leaves" width="75%" height="75%">
-                  </p>
-              </section>
+                      <img src="img/PE/portrait3.gif" alt="portrait with leaves" width="45%" height="45%">
+                      <img src="img/PE/portrait4.gif" alt="portrait with leaves" width="45%" height="45%">
+                      </p></div>
+              
 			  
-              <section>
-         <h2>Motion Graphics</h2>
+            
+          <button type="button" class="collapsible">Motion Graphics</button>
+                  <div class="content">
                   <p>
                       This is probably the medium I've been trying to work on the most. Very much still learning, but loving the programs.<br><br><br>
-                      <img src="img/PE/eye-animation.gif" alt="eye animation" width="30%" height="30%">
-                      <img src="img/PE/wave-moon-animation.gif" alt="wave to moon animation" width="30%" height="30%">
-                      <img src="img/PE/money-animation.gif" alt="car getting money" width="30%" height="30%">
-                      <video width="90%" height="90%" controls>
+                      <img src="img/PE/eye-animation.gif" alt="eye animation" width="25%" height="25%">
+                      <img src="img/PE/wave-moon-animation.gif" alt="wave to moon animation" width="25%" height="25%">
+                      <img src="img/PE/money-animation.gif" alt="car getting money" width="25%" height="25%">
+                      <video width="50%" height="50%" controls>
                         <source src="img/PE/covid-19.mp4" type="video/mp4">
                       </video>
-                  </p>
-              </section>
-			  
-              <section>
-         <h2>Photography</h2>
+                      </p></div>
+              
+              
+          <button type="button" class="collapsible">Photography</button>
+                  <div class="content">
                   <p>
                       Behind the lens.<br><br><br>
-                      <img src="img/PE/alex5.jpg" alt="alex" width="45%" height="45%">
-                      <img src="img/PE/alythea3.JPG" alt="alythea" width="45%" height="45%"><br><br>
-                      <img src="img/PE/travis1.JPG" alt="alythea" width="45%" height="45%">
-                      <img src="img/PE/rachel3.JPG" alt="rachel" width="45%" height="45%">
-                  </p>
-              </section>
+                      <img src="img/PE/alex5.jpg" alt="alex" width="30%" height="30%">
+                      <img src="img/PE/alythea3.JPG" alt="alythea" width="30%" height="30%">
+                      <img src="img/PE/travis1.JPG" alt="alythea" width="30%" height="30%">
+                      <img src="img/PE/rachel3.JPG" alt="rachel" width="30%" height="30%">
+                      </p></div>
+              
+              
+              <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
  
             <footer>
                Designed and coded by yours truly. CV 2022.
