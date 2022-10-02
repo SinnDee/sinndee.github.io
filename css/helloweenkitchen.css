@@ -51,9 +51,14 @@ body{
 }
 
 .home {
-    background: #1e1e1e;
+    background: #000000;
+	background-image: url('img/fire.gif');
+    background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin:0;
 	color: #ffffff;
-	font-family: 'Jost', sans-serif;
+	font-family: 'Cinzel Decorative', serif;
     font-size: 25px;
     text-align: center;
     line-height: 20px;
@@ -69,8 +74,7 @@ header {
 nav {
     text-align: center;
     line-height: 30px;
-    font-family: 'Jost', sans-serif;
-    font-weight: 100;
+    font-family: 'Cinzel', sans-serif;
 }
 
 nav a {
@@ -117,7 +121,7 @@ footer {
     position: relative;
     display: inline-block;
     color: #ffffff;
-    font-family: 'Jost', sans-serif;
+    font-family: 'Cinzel', serif;
     margin-top: 200px;
     margin-bottom: 20px;
     text-align: center;
