@@ -41,7 +41,7 @@ img {
 
 .home {
     background: #000000;
-	background-image: url('img/fire.gif');
+	background-image: url('fire.gif');
     background-size: cover;
     height: 100vh;
     padding:0;
