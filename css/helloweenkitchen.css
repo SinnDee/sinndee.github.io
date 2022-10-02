@@ -39,17 +39,6 @@ img {
 	margin: 0 auto;	
 }
 
-body{
-    background-image: url('http://sinndee.github.io/img/fire.gif');
-    background-size: cover;
-    
-    
-    
-    height: 100vh;
-    padding:0;
-    margin:0;
-}
-
 .home {
     background: #000000;
 	background-image: url('img/fire.gif');
@@ -58,11 +47,6 @@ body{
     padding:0;
     margin:0;
 	color: #ffffff;
-	font-family: 'Cinzel Decorative', serif;
-    font-size: 25px;
-    text-align: center;
-    line-height: 20px;
-    font-weight: 100;
 }
 
 header {
@@ -73,15 +57,14 @@ header {
 
 nav {
     text-align: center;
-    line-height: 30px;
     font-family: 'Cinzel', sans-serif;
 }
 
 nav a {
 	text-decoration: none;
-    font-size: 12px;
+    font-size: 20px;
     text-transform: uppercase;
-    letter-spacing: 10px;
+    letter-spacing: 200px;
 }
 
 nav ul li {
@@ -115,6 +98,16 @@ a {
     color: #ffffff;
     text-decoration:none;
     font-weight: 100;
+}
+
+h1 {
+	font-family: 'Cinzel Decorative', serif;
+	font-size: 72px;
+}
+
+h2 {
+	font-family: 'Cinzel', serif;
+	font-size: 35px;
 }
 
 footer {
