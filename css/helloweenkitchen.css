@@ -40,16 +40,13 @@ img {
 }
 
 .home {
+		background-image: url('../img/fire.gif');
     background: #000000;
     background-size: cover;
     height: 100vh;
     padding:0;
     margin:0;
 	color: #ffffff;
-}
-
-body {
-	background-image: url('../img/fire.gif');
 }
 
 header {
