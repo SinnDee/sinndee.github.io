@@ -153,6 +153,12 @@ footer {
 
 @media screen and (max-width: 800px) {
   body {
-    height: 100vh; /* The width is 100%, when the viewport is 800px or smaller */
+    position: fixed;
+ background-image: url(../img/fire.gif);
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%:
+ z-index: 0;
   }
 }
