@@ -150,3 +150,9 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+@media screen and (max-width: 800px) {
+  body {
+    height: 100vh; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
