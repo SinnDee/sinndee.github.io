@@ -115,12 +115,10 @@ footer {
     display: inline-block;
     color: #ffffff;
     font-family: 'Cinzel', serif;
-    margin-top: 200px;
+    margin-top: 150px;
     margin-bottom: 20px;
     text-align: center;
-    font-size: 9px;
+    font-size: 10px;
     bottom: 0;
     width: 100%;
-    font-weight: 300;
-    letter-spacing: 1px;
 }
