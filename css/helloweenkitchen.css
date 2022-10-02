@@ -162,5 +162,6 @@ footer {
     background-size: 100%;
     background-image: url('../img/fire.gif');
     background-attachment: fixed;
+	   background-repeat: no-repeat;
   }
 }
