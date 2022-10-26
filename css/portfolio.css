@@ -160,9 +160,13 @@ section {
 }
 
 .column {
-  width: 50%;
+  width: 25%;
     float: left;
-    padding: 10%;
+    margin-top: 4%;
+}
+
+.padding {
+  margin-left: 25%;
 }
 
 /* Clear floats after the columns */
