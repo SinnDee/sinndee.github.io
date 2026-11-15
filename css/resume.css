@@ -7,11 +7,11 @@
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-   /* -webkit-transition: all 0.8s ease-in-out;
+    /* -webkit-transition: all 0.8s ease-in-out;
     -moz-transition: all 0.6s ease-in-out;
     -ms-transition: all 0.6s ease-in-out;
     -o-transition: all 0.6s ease-in-out;
-    transition: all 0.6s ease-in-out; */
+    transition: all 0.6s ease-in-out;*/
 }
 
 .clearfix:after {
@@ -30,11 +30,14 @@ li {
 
 a {
     text-decoration: none;
-    color: #000000;
 }
 
 img {
 	border: 0;
+}
+
+body {
+    cursor: url('../img/HoloCursor2.png'), auto;
 }
 
 /* global */
@@ -45,49 +48,81 @@ img {
 }
 
 .home {
-    background: #FFFFFF;
-	color: #000000;
-	font-family: 'Source Sans Pro', sans-serif;
-    font-size: 25px;
-    text-align: left;
+    background: #000000;
+	color: #ffffff;
+	font-family: 'Urbanist', sans-serif;
+    font-size: 14px;
+    text-align: center;
     line-height: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.column1 {
+    width: 40%;
+    float: left;
+    margin-left: 10%;
+}
+
+.column2 {
+    width: 40%;
+    float: right;
+    margin-right: 10%;
+}
+
+.title {
+    font-family: "Jacquard 12";
+    font-size: 40px;
+}
+
+.text-left {
+    text-align: left;
 }
 
 header {
-    padding-top: 15px;
     text-align: center;
 }
 
 nav {
-    text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
-    position: fixed;
+    text-align: right;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
     top: 0;
     width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
-    background: #ffffff;
+    background: #000000;
+    position: fixed;
 }
 
 nav a {
 	text-decoration: none;
-    padding-left: 20px;
-    padding-right: 20px;
     line-height: 30px;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 8px;
+    font-size: 14px;
 }
 
 
 nav ul li {
 	display: inline-block;
-    text-align: center;
     padding-left: 30px;
     padding-right: 30px;
 }
 
-.line {
+h1 {
+    font-family: "Jacquard 12";
+    font-size: 150px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+b {
+    font-weight: 700;
+}
+
+/* animated line for nav links */
+
+line {
     display: inline-block;
     position: relative;
 }
@@ -102,91 +137,111 @@ nav ul li {
 }
 
 .line:hover:after {
-    width:  50%;
-    background: #000000;
-}
-
-h2 {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
-    margin-bottom: 20px;
-    letter-spacing: 10px;
-    text-transform: uppercase;
-}
-
-section {
-    margin: auto;
-    margin-top: 40px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 100px;
-    padding-right: 40px;
-    width: 80%;
-    height: auto;
-    box-shadow: 3px 3px 30px 3px #eee;
-}
-
-.no {
-    font-size: 14px;
-    line-height: 25px;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.invisible {
-    display: inline-block;
     width: 100%;
-    height: 1%;
+    background: #ffffff;
 }
 
-.left {
-    width: 50%;
-    float: left;
+
+/* bouncy animation for hover */
+@keyframes slowBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px); /* Adjust how high it bounces */
+  }
 }
 
-.right {
-    width: 65%;
-    float: right;
+/* Style the link */
+.bounce-link {
+  display: inline-block; /* Required so transform works on inline elements */
+  text-decoration: none;
 }
 
-p{
+/* Trigger the animation on hover */
+.bounce-link:hover {
+  animation: slowBounce 1.2s ease-in-out infinite; /* 1.2s controls the slow speed */
+}
+
+a {
+    color: #ffffff;
+    text-decoration:none;
+    font-weight: 100;
+    cursor: url('../img/HoloPointer2.png'), auto;
+}
+
+/* FOLDER GRAPHIC */
+
+/*.button {
+    font-size: 10px;
+    color: #000000;
+    background: transparent;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    letter-spacing: 2px;
+    font-weight: 300;
+}*/
+button {
+     background-color: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-family: 'Urbanist', sans-serif;
     font-size: 14px;
-    line-height: 25px;
-    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-bottom: 3%;
+    cursor: url('../img/HoloPointer2.png'), auto;
 }
 
-img {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
 }
 
-video {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+/* smaller box in a box */
+.scroll-box {
+    width: 35%;
+  max-height: 800px; /* Shrinks if content is small, scrolls if larger */
+  overflow-y: auto;  /* Shows scrollbar only when needed */
+  overflow-x: hidden;
+  border: 1px solid #fff;
+    border-radius: 20px;
 }
 
-.italics {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 700i;
+/* sideways scroll box */
+.horizontal-scroll-row {
+  display: flex;
+  flex-wrap: nowrap; /* Prevents items from wrapping to a new line */
+  gap: 12px;
+  max-width: 35%;  /* Constrains the container width */
+  overflow-x: auto;  /* Enables horizontal scrolling */
+    margin-top: 5%;
+    margin-bottom: 5%;
+     border: 1px solid #fff;
+    border-radius: 20px;
 }
 
-/*little line separating recognition*/
-hr{
-    width:5%; 
-    margin-left: 47.5%;
+.horizontal-scroll-row > .item {
+  flex: 0 0 auto;    /* Prevents items from shrinking to fit */
+  width: 150px;
 }
 
 footer {
     position: relative;
     display: inline-block;
-    color: #000000;
-    font-family: 'Source Sans Pro', sans-serif;
-    margin-top: 200px;
+    color: #ffffff;
+    font-family: 'Urbanist', sans-serif;
+    margin-top: 100px;
     margin-bottom: 20px;
     text-align: center;
-    font-size: 14px;
-    letter-spacing: 7px;
+    font-size: 9px;
     bottom: 0;
     width: 100%;
+    font-weight: 200;
 }

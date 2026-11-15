@@ -29,7 +29,15 @@ a {
 }
 
 img {
+    padding-top: .2%;
+    padding-left: .2%;
+    padding-right: .2%;
 	border: 0;
+    border-radius: 20px;
+}
+
+body {
+    cursor: url('../img/HoloCursor2.png'), auto;
 }
 
 /* global */
@@ -39,43 +47,60 @@ img {
 	margin: 0 auto;	
 }
 
+.column1 {
+    width: 40%;
+    float: left;
+    margin-left: 10%;
+}
+
+.column2 {
+    width: 40%;
+    float: right;
+    margin-right: 10%;
+}
+
 .home {
-    background: #1e1e1e;
+    background: #000000;
 	color: #ffffff;
-	font-family: 'Jost', sans-serif;
-    font-size: 25px;
+	font-family: 'Urbanist', sans-serif;
+    font-size: 14px;
     text-align: center;
     line-height: 20px;
     font-weight: 100;
+    letter-spacing: 1px;
 }
 
 header {
-    padding-top: 12%;
     text-align: center;
-    padding-bottom: 5%;
+    margin-bottom: 12%;
+    margin-top: 2%;
 }
 
 nav {
-    text-align: center;
-    line-height: 30px;
-    font-family: 'Jost', sans-serif;
-    font-weight: 100;
+    text-align: right;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    top: 0;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #000000;
 }
 
 nav a {
 	text-decoration: none;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 10px;
+    line-height: 30px;
+    font-size: 14px;
 }
+
 
 nav ul li {
 	display: inline-block;
-    text-align: center;
-    padding-left: 45px;
-    padding-right: 45px;
-    font-weight: 100;
+    padding-left: 30px;
+    padding-right: 30px;
 }
+
 
 .line {
     display: inline-block;
@@ -92,39 +117,111 @@ nav ul li {
 }
 
 .line:hover:after {
-    width: 50%;
+    width: 100%;
     background: #ffffff;
+}
+
+
+@keyframes slowBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px); /* Adjust how high it bounces */
+  }
+}
+
+/* Style the link */
+.bounce-link {
+  display: inline-block; /* Required so transform works on inline elements */
+  text-decoration: none;
+}
+
+/* Trigger the animation on hover */
+.bounce-link:hover {
+  animation: slowBounce 1.2s ease-in-out infinite; /* 1.2s controls the slow speed */
 }
 
 a {
     color: #ffffff;
     text-decoration:none;
     font-weight: 100;
+    cursor: url('../img/HoloPointer2.png'), auto;
 }
 
-#background-video {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
+.title {
+    font-family: "Jacquard 12";
+    font-size: 40px;
+}
+
+.sparkle-btn {
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sparkle-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Shared star styles */
+.sparkle-btn::before,
+.sparkle-btn::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background: #ffffff;
+  /* Four-pointed star shape */
+  clip-path: polygon(
+    50% 0%, 61% 39%, 100% 50%, 61% 61%, 
+    50% 100%, 39% 61%, 0% 50%, 39% 39%
+  );
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Top-left star */
+.sparkle-btn::before {
+  top: -5px;
+  left: 40px;
+}
+
+/* Bottom-right star */
+.sparkle-btn::after {
+  bottom: 80px;
+  right: 40px;
+}
+
+/* Trigger twinkle animation on hover */
+.sparkle-btn:hover::before {
+  animation: twinkle 1s ease-in-out infinite;
+}
+
+.sparkle-btn:hover::after {
+  animation: twinkle 1s ease-in-out 0.4s infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0.4) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2) rotate(180deg);
+  }
 }
 
 footer {
     position: relative;
     display: inline-block;
     color: #ffffff;
-    font-family: 'Jost', sans-serif;
+    font-family: 'Urbanist', sans-serif;
     margin-top: 200px;
     margin-bottom: 20px;
     text-align: center;
     font-size: 9px;
     bottom: 0;
     width: 100%;
-    font-weight: 300;
-    letter-spacing: 1px;
+    font-weight: 200;
 }
